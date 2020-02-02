@@ -1,0 +1,12 @@
+{
+  	"name": "reminder",
+  	"version": "1.0.0",
+  	"description": "First application",
+  	"main": "index.html",
+ 	 "author": "Kostanios",
+  	"window": {
+   		 "toolbar": false,
+    		"width": 500,
+   		 "height": 200
+ 	 }
+}

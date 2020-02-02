@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title> reminder </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <script src="script.js"></script>
+
+    <div class="widget">
+  <h3 class="widget-title">chose the action:</h3>
+  <ul class="widget-list">
+    <li><a id="addEvent" onclick="redyToAdd()">add event</a></li>
+      <input id ="data" class="addEvent" hidden = "true" type="datetime-local" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" required>
+           <input id ="dataComment" type ="text" hidden ="true" cols = "40" value = "please enter comment"></a>
+              <button id ="dataSAVE" class="addEvent" onclick="saveDataOfEvent()" hidden = "true">SAVE</button>
+
+    <li><a onclick="eventsShow()">my events</a></li>
+      <div id="eventsShow"></div>
+
+    <li><a onclick="deleteEvent()">delete event</a></li>
+      <div id="deleteEvent" hidden = "true"> enter number of event what you want to delete</div>
+        <input id ="deleteNumber" type ="number" hidden ="true">
+          <button id="deleteButton" onclick="deleteButton()" hidden = "true"> delete </button>
+    <li><a onclick="changeEventButton()">change event</a></li>
+        <div id="changeEvent" hidden = "true"> enter number of event what you want to change<br></div>
+        <input id ="changeNumber" type ="number" hidden ="true" >
+          <button id="okChange" onclick="chooseEvent()"  hidden = "true"> OK </button>
+
+        <button  id = "wantToChangeDate" onclick="wantToChangeDate()" hidden = "true">i want to change Date</button>
+        <button id = "wantToChangeComment" onclick="wantToChangeComment()" hidden ="true">i want to change Comment</button>
+          <input id ="changeDateValue"  hidden = "true" type="datetime-local" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" required>
+              <button id="changeDate" onclick="ChangeDate()" hidden = "true"> change Date </button>
+            <input id ="changeCommentValue" type ="text" hidden ="true" cols = "40" value = "please enter new comment">
+              <button id="changeComment" onclick="ChangeComment()" hidden = "true"> change Comment </button>
+  </ul>
+</div>
+
+  </body>
+</html>
